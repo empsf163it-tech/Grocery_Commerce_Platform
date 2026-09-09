@@ -1,0 +1,5 @@
+
+body.dark{--cream:#171914;--card:#20231d;--ink:#f7f3e9;--muted:#a9afa5;--line:#ffffff22;--green:#5f9b69}
+body.dark header{background:rgba(23,25,20,.94)}
+body.dark .search input,body.dark .search select,body.dark .field input,body.dark .field select{background:#171914;color:var(--ink)}
+body.dark .product-media,.dark .detail-media{background:#282d25}
