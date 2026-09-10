@@ -1,1 +1,64 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login — FRESHA</title><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/dark-mode.css"></head><body><main class="auth"><div class="authbox"><a class="logo" href="index.html"><span class="mark"><span>F</span></span>FRESHA</a><div class="eyebrow" style="text-align:center">FRESHA ACCOUNT</div><h1>Welcome.</h1><p>Account features are reserved for a later version. Shopping and checkout work without an account.</p><form data-demo><div class="field"><label>Email</label><input type="email" required></div><div class="field"><label>Password</label><input type="password" required></div><button class="btn primary" style="width:100%">Sign In</button></form><div class="note">New here? <a href="signup.html">Create an account</a> · <a href="index.html">Return home</a></div></div></main><script src="assets/js/main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login — TAJAJINS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+</head>
+<body>
+  <main class="auth">
+    <div class="authbox">
+      <a class="logo" href="index.html">
+        <img src="assets/images/logo.png" alt="TAJAJINS Logo" class="logo-img">
+      </a>
+      <div class="eyebrow" style="text-align:center">TAJAJINS ACCOUNT</div>
+      <h1>Welcome.</h1>
+      <p>Sign in to manage your saved lists, delivery addresses, and active routines.</p>
+      
+      <form data-demo onsubmit="event.preventDefault(); alert('Signed in successfully!'); window.location.href='index.html';">
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" placeholder="name@example.com" required>
+        </div>
+        
+        <div class="field" style="position:relative;">
+          <label>Password</label>
+          <div style="position:relative;">
+            <input type="password" id="loginPass" placeholder="••••••••" required style="padding-right:45px;">
+            <button type="button" onclick="togglePass('loginPass', this)" style="position:absolute; right:12px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; font-size:18px;" title="Toggle password visibility">👁️</button>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin:16px 0 24px; font-size:14px;">
+          <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-family:var(--body);">
+            <input type="checkbox" style="accent-color:var(--green); width:18px; height:18px;"> Remember me
+          </label>
+          <a href="#" onclick="alert('Password reset link sent to your email.'); return false;" style="color:var(--orange); font-weight:700;">Forgot Password?</a>
+        </div>
+
+        <button class="btn primary" style="width:100%">Sign In</button>
+      </form>
+      
+      <div class="note">
+        New to TAJAJINS? <a href="signup.html" style="font-weight:700;">Create an account</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function togglePass(id, btn) {
+      const input = document.getElementById(id);
+      if (input.type === 'password') {
+        input.type = 'text';
+        btn.textContent = '🙈';
+      } else {
+        input.type = 'password';
+        btn.textContent = '👁️';
+      }
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
