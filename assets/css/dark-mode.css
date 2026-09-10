@@ -15,3 +15,7 @@ body.dark .list-card:hover .item-tag{background:#282d25;border-color:rgba(95,155
 body.dark .list-price{color:#70b07b}
 body.dark .sub-head{color:var(--muted)}
 body.dark .head.center .eyebrow{color:var(--orange)}
+body.dark .mobile-toggle{border-color:var(--line);color:var(--ink)}
+body.dark .mobile-toggle:hover{border-color:#5f9b69;color:#5f9b69}
+body.dark .menu.open .menu-account-btn{background:linear-gradient(135deg,#5f9b69,#3d7a48) !important;box-shadow:0 6px 18px rgba(95,155,105,0.25) !important}
+body.dark .menu.open .menu-account-btn:hover{background:linear-gradient(135deg,var(--orange),#d4752e) !important;box-shadow:0 8px 24px rgba(230,126,34,0.25) !important}

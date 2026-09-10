@@ -103,9 +103,32 @@ function highlightActiveMenu() {
   });
 }
 
+function initMobileMenu() {
+  const toggle = document.getElementById("mobileMenuToggle");
+  const menu = document.querySelector(".menu");
+  if (!toggle || !menu) return;
+  
+  const iconHamburger = '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>';
+  const iconClose = '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>';
+  
+  toggle.onclick = (e) => {
+    e.stopPropagation();
+    const isOpen = menu.classList.toggle("open");
+    toggle.innerHTML = isOpen ? iconClose : iconHamburger;
+  };
+
+  document.addEventListener("click", (e) => {
+    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove("open");
+      toggle.innerHTML = iconHamburger;
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   updateCart();
   renderCart();
   initTheme();
+  initMobileMenu();
   highlightActiveMenu();
 });
