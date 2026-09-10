@@ -3,3 +3,15 @@ body.dark{--cream:#171914;--card:#20231d;--ink:#f7f3e9;--muted:#a9afa5;--line:#f
 body.dark header{background:rgba(23,25,20,.94)}
 body.dark .search input,body.dark .search select,body.dark .field input,body.dark .field select{background:#171914;color:var(--ink)}
 body.dark .product-media,.dark .detail-media{background:#282d25}
+body.dark .contact-svg{color:#5f9b69}
+body.dark .category-emoji svg{color:#5f9b69}
+body.dark .category-card:hover .category-emoji svg{color:white}
+body.dark .pass-toggle{color:var(--muted)}
+body.dark .pass-toggle:hover{color:#5f9b69}
+body.dark .feature-icon{background:rgba(95,155,105,.12);color:#5f9b69}
+body.dark .eyebrow-pill{background:rgba(95,155,105,0.18);color:#70b07b}
+body.dark .item-tag{background:#171914;color:var(--ink);border-color:var(--line)}
+body.dark .list-card:hover .item-tag{background:#282d25;border-color:rgba(95,155,105,0.4)}
+body.dark .list-price{color:#70b07b}
+body.dark .sub-head{color:var(--muted)}
+body.dark .head.center .eyebrow{color:var(--orange)}

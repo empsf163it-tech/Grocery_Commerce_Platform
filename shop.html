@@ -1,4 +1,16 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shop — TAJAJINS</title><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/dark-mode.css"></head><body>      <header>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shop — TAJAJINS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+</head>
+
+<body>
+  <header>
     <div class="container nav">
       <a class="logo" href="index.html">
         <img src="assets/images/logo.png" alt="TAJAJINS Logo" class="logo-img">
@@ -11,18 +23,153 @@
         <a href="subscriptions.html">Subscriptions</a>
       </nav>
       <div class="actions">
-        <button id="darkToggle" class="theme-btn" title="Toggle theme">🌙</button>
+        <button id="darkToggle" class="theme-btn" title="Toggle theme"><svg fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg></button>
         <a href="login.html" class="btn-mini-link">Account</a>
       </div>
     </div>
-  </header><main><section class="page-hero"><div class="container"><div class="eyebrow">Tajajins market</div><h1>SHOP<br>EVERYDAY.</h1><div class="chips"><button class="chip active" onclick="filterProducts('all',this)">All</button><button class="chip" onclick="filterProducts('produce',this)">Produce</button><button class="chip" onclick="filterProducts('pantry',this)">Pantry</button><button class="chip" onclick="filterProducts('dairy',this)">Dairy</button></div></div></section><section class="section"><div class="container"><div class="grid" id="productGrid"><a class="product" data-cat="produce" href="product.html"><div class="product-media"><span class="badge">Fresh</span><span class="produce">🥑</span></div><div class="product-body"><h3>Avocado</h3><div class="meta"><span>2 pieces</span><strong class="price">₹120</strong></div><div class="fresh">Picked for today</div><button class="add" onclick="event.preventDefault();addItem('Avocado',120)">Add to basket</button></div></a>
-<a class="product" data-cat="produce" href="product.html"><div class="product-media"><span class="badge">Fresh</span><span class="produce">🍅</span></div><div class="product-body"><h3>Tomatoes</h3><div class="meta"><span>1 kg</span><strong class="price">₹68</strong></div><div class="fresh">Farm fresh</div><button class="add" onclick="event.preventDefault();addItem('Tomatoes',68)">Add to basket</button></div></a>
-<a class="product" data-cat="pantry" href="product.html"><div class="product-media"><span class="produce">🍚</span></div><div class="product-body"><h3>Everyday Rice</h3><div class="meta"><span>5 kg</span><strong class="price">₹420</strong></div><div class="fresh">Pantry essential</div><button class="add" onclick="event.preventDefault();addItem('Everyday Rice',420)">Add to basket</button></div></a>
-<a class="product" data-cat="dairy" href="product.html"><div class="product-media"><span class="produce">🥛</span></div><div class="product-body"><h3>Whole Milk</h3><div class="meta"><span>1 litre</span><strong class="price">₹64</strong></div><div class="fresh">Chilled</div><button class="add" onclick="event.preventDefault();addItem('Whole Milk',64)">Add to basket</button></div></a><a class="product" data-cat="household" href="product.html"><div class="product-media"><span class="produce">🧺</span></div><div class="product-body"><h3>Home Essentials</h3><div class="meta"><span>Multi-pack</span><strong class="price">₹299</strong></div><div class="fresh">Household</div><button class="add" onclick="event.preventDefault();addItem('Home Essentials',299)">Add to basket</button></div></a><a class="product" data-cat="produce" href="product.html"><div class="product-media"><span class="produce">🍌</span></div><div class="product-body"><h3>Bananas</h3><div class="meta"><span>1 dozen</span><strong class="price">₹75</strong></div><div class="fresh">Naturally sweet</div><button class="add" onclick="event.preventDefault();addItem('Bananas',75)">Add to basket</button></div></a></div></div></section>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Tajajins market</div>
+        <h1>SHOP<br>EVERYDAY.</h1>
+        <div class="chips"><button class="chip active" onclick="filterProducts('all',this)">All</button><button
+            class="chip" onclick="filterProducts('produce',this)">Produce</button><button class="chip"
+            onclick="filterProducts('pantry',this)">Pantry</button><button class="chip"
+            onclick="filterProducts('dairy',this)">Dairy</button></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="grid" id="productGrid"><a class="product" data-cat="produce" href="product.html">
+            <div class="product-media"><span class="badge">Fresh</span><img src="assets/images/avocado.jpg"
+                alt="Avocado" class="prod-img"></div>
+            <div class="product-body">
+              <h3>Avocado</h3>
+              <div class="meta"><span>2 pieces</span><strong class="price">₹120</strong></div>
+              <div class="fresh">Picked for today</div><button class="add"
+                onclick="event.preventDefault();addItem('Avocado',120)">Add to basket</button>
+            </div>
+          </a>
+          <a class="product" data-cat="produce" href="product.html">
+            <div class="product-media"><span class="badge">Fresh</span><img src="assets/images/tomatoes.jpg"
+                alt="Tomatoes" class="prod-img"></div>
+            <div class="product-body">
+              <h3>Tomatoes</h3>
+              <div class="meta"><span>1 kg</span><strong class="price">₹68</strong></div>
+              <div class="fresh">Farm fresh</div><button class="add"
+                onclick="event.preventDefault();addItem('Tomatoes',68)">Add to basket</button>
+            </div>
+          </a>
+          <a class="product" data-cat="pantry" href="product.html">
+            <div class="product-media"><img src="assets/images/rice.jpg" alt="Everyday Rice" class="prod-img"></div>
+            <div class="product-body">
+              <h3>Everyday Rice</h3>
+              <div class="meta"><span>5 kg</span><strong class="price">₹420</strong></div>
+              <div class="fresh">Pantry essential</div><button class="add"
+                onclick="event.preventDefault();addItem('Everyday Rice',420)">Add to basket</button>
+            </div>
+          </a>
+          <a class="product" data-cat="dairy" href="product.html">
+            <div class="product-media"><img src="assets/images/milk.jpg" alt="Whole Milk" class="prod-img"></div>
+            <div class="product-body">
+              <h3>Whole Milk</h3>
+              <div class="meta"><span>1 litre</span><strong class="price">₹64</strong></div>
+              <div class="fresh">Chilled</div><button class="add"
+                onclick="event.preventDefault();addItem('Whole Milk',64)">Add to basket</button>
+            </div>
+          </a><a class="product" data-cat="household" href="product.html">
+            <div class="product-media"><img src="assets/images/household.jpg" alt="Home Essentials" class="prod-img">
+            </div>
+            <div class="product-body">
+              <h3>Home Essentials</h3>
+              <div class="meta"><span>Multi-pack</span><strong class="price">₹299</strong></div>
+              <div class="fresh">Household</div><button class="add"
+                onclick="event.preventDefault();addItem('Home Essentials',299)">Add to basket</button>
+            </div>
+          </a><a class="product" data-cat="produce" href="product.html">
+            <div class="product-media"><img src="assets/images/bananas.jpg" alt="Bananas" class="prod-img"></div>
+            <div class="product-body">
+              <h3>Bananas</h3>
+              <div class="meta"><span>1 dozen</span><strong class="price">₹75</strong></div>
+              <div class="fresh">Naturally sweet</div><button class="add"
+                onclick="event.preventDefault();addItem('Bananas',75)">Add to basket</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<section class="section"><div class="container"><div class="head"><h2>Seasonal specials &<br>flash offers</h2></div><div class="features-grid" style="grid-template-columns:1fr 1fr;"><div class="recipe" style="background:var(--green)"><div class="eyebrow" style="color:#dce8da">WEEKLY BUNDLE</div><h2 style="font-size:42px">Organic Fruit Box</h2><p>Get 6 varieties of seasonal organic fruits at 20% off this week only.</p><button class="btn primary" onclick="addItem('Organic Fruit Box', 349)">Add Bundle · ₹349</button></div><div class="recipe" style="background:var(--orange)"><div class="eyebrow" style="color:#ffe7d9">BREAKFAST SPECIAL</div><h2 style="font-size:42px">Artisanal Bakery Set</h2><p>Fresh sourdough bread, farm butter, and wildflower honey.</p><button class="btn" style="border-color:white;color:white" onclick="addItem('Artisanal Bakery Set', 289)">Add Set · ₹289</button></div></div></div></section>
+    <section class="section">
+      <div class="container">
+        <div class="head center">
+          <div class="eyebrow">SPECIAL OFFERS</div>
+          <h2>Seasonal specials & flash offers</h2>
+          <p class="sub-head">Handcrafted weekly bundles with up to 20% savings.</p>
+        </div>
+        <div class="features-grid" style="grid-template-columns:1fr 1fr;">
+          <div class="recipe" style="background:var(--green)">
+            <div class="eyebrow" style="color:#dce8da">WEEKLY BUNDLE</div>
+            <h2 style="font-size:42px">Organic Fruit Box</h2>
+            <p>Get 6 varieties of seasonal organic fruits at 20% off this week only.</p>
+            <button class="btn primary" onclick="addItem('Organic Fruit Box', 349)">Add Bundle · ₹349</button>
+          </div>
+          <div class="recipe" style="background:var(--orange)">
+            <div class="eyebrow" style="color:#ffe7d9">BREAKFAST SPECIAL</div>
+            <h2 style="font-size:42px">Artisanal Bakery Set</h2>
+            <p>Fresh sourdough bread, farm butter, and wildflower honey.</p>
+            <button class="btn" style="border-color:rgb(24, 44, 18);color:rgb(59, 129, 71)"
+              onclick="addItem('Artisanal Bakery Set', 289)">Add Set ·
+              ₹289</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section"><div class="container"><div class="head"><h2>Curated dietary &<br>pantry bundles</h2></div><div class="step-grid"><div class="step-card"><div class="category-emoji">🥑</div><h3>Keto & Low-Carb Pack</h3><p>Avocados, extra virgin olive oil, nuts, and organic eggs bundled together.</p><div style="font:700 22px var(--price);margin-top:14px">₹650</div><button class="add" onclick="addItem('Keto Pack', 650)">Add to Basket</button></div><div class="step-card"><div class="category-emoji">🌾</div><h3>Whole Grain Essentials</h3><p>Brown rice, quinoa, rolled oats, and multi-grain flour.</p><div style="font:700 22px var(--price);margin-top:14px">₹580</div><button class="add" onclick="addItem('Grain Essentials', 580)">Add to Basket</button></div><div class="step-card"><div class="category-emoji">🍵</div><h3>Immunity & Wellness</h3><p>Green tea, fresh ginger, raw turmeric, and lemon basket.</p><div style="font:700 22px var(--price);margin-top:14px">₹390</div><button class="add" onclick="addItem('Immunity Pack', 390)">Add to Basket</button></div></div></div></section></main>    <footer>
+    <section class="section">
+      <div class="container">
+        <div class="head center">
+          <div class="eyebrow">DIETARY PACKS</div>
+          <h2>Curated dietary & pantry bundles</h2>
+          <p class="sub-head">Tailored grocery combinations for your specific nutrition goals.</p>
+        </div>
+        <div class="step-grid">
+          <div class="step-card">
+            <div class="category-img-box" style="height:160px; border-radius:14px; overflow:hidden;"><img
+                src="assets/images/avocado.jpg" alt="Keto & Low-Carb Pack"
+                style="width:100%; height:100%; object-fit:cover;"></div>
+            <h3>Keto & Low-Carb Pack</h3>
+            <p>Avocados, extra virgin olive oil, nuts, and organic eggs bundled together.</p>
+            <div style="font:700 22px var(--price);margin-top:14px">₹650</div><button class="add"
+              onclick="addItem('Keto Pack', 650)">Add to Basket</button>
+          </div>
+          <div class="step-card">
+            <div class="category-img-box" style="height:160px; border-radius:14px; overflow:hidden;"><img
+                src="assets/images/category_pantry.jpg" alt="Whole Grain Essentials"
+                style="width:100%; height:100%; object-fit:cover;"></div>
+            <h3>Whole Grain Essentials</h3>
+            <p>Brown rice, quinoa, rolled oats, and multi-grain flour.</p>
+            <div style="font:700 22px var(--price);margin-top:14px">₹580</div><button class="add"
+              onclick="addItem('Grain Essentials', 580)">Add to Basket</button>
+          </div>
+          <div class="step-card">
+            <div class="category-img-box" style="height:160px; border-radius:14px; overflow:hidden;"><img
+                src="assets/images/category_beverages.jpg" alt="Immunity & Wellness"
+                style="width:100%; height:100%; object-fit:cover;"></div>
+            <h3>Immunity & Wellness</h3>
+            <p>Green tea, fresh ginger, raw turmeric, and lemon basket.</p>
+            <div style="font:700 22px var(--price);margin-top:14px">₹390</div><button class="add"
+              onclick="addItem('Immunity Pack', 390)">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
     <div class="container footer-grid">
       <div>
         <a class="footer-logo" href="index.html">
@@ -33,13 +180,22 @@
         </div>
         <div class="social-icons" style="display:flex; gap:10px; margin-top:16px;">
           <a href="#" class="social-icon" aria-label="Facebook">
-            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
           </a>
           <a href="#" class="social-icon" aria-label="Instagram">
-            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
           </a>
           <a href="#" class="social-icon" aria-label="Twitter">
-            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.936 9.936 0 0024 4.59z"/></svg>
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.936 9.936 0 0024 4.59z" />
+            </svg>
           </a>
         </div>
       </div>
@@ -63,10 +219,23 @@
       <div>
         <div class="footer-title">Contact Info</div>
         <div class="footer-links">
-          <a href="tel:+919876543210">📞 +91 98765 43210</a>
-          <a href="mailto:support@tajajins.com">✉️ support@tajajins.com</a>
-          <span>📍 #102 Fresh Market Rd, Indiranagar, Bengaluru 560038</span>
-          
+          <a href="tel:+919876543210"><span class="contact-svg"><svg fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg></span> +91 98765 43210</a>
+          <a href="mailto:support@tajajins.com"><span class="contact-svg"><svg fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg></span> support@tajajins.com</a>
+          <span><span class="contact-svg"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg></span> #102 Fresh Market Rd, Indiranagar, Bengaluru 560038</span>
+
         </div>
       </div>
     </div>
@@ -74,4 +243,8 @@
       <div>© 2026 TAJAJINS. All rights reserved. Account-Free Shopping.</div>
       <div>FRESH MADE EASY.</div>
     </div>
-  </footer><script src="assets/js/main.js"></script></body></html>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
