@@ -19,3 +19,16 @@ body.dark .mobile-toggle{border-color:var(--line);color:var(--ink)}
 body.dark .mobile-toggle:hover{border-color:#5f9b69;color:#5f9b69}
 body.dark .menu.open .menu-account-btn{background:linear-gradient(135deg,#5f9b69,#3d7a48) !important;box-shadow:0 6px 18px rgba(95,155,105,0.25) !important}
 body.dark .menu.open .menu-account-btn:hover{background:linear-gradient(135deg,var(--orange),#d4752e) !important;box-shadow:0 8px 24px rgba(230,126,34,0.25) !important}
+body.dark .back-to-top{background:#5f9b69;border-color:rgba(255,255,255,0.15)}
+body.dark .back-to-top:hover{background:var(--orange)}
+body.dark .footer-links a:hover{color:#5f9b69}
+body.dark .testimonial-avatar{border-color:#5f9b69}
+body.dark .testimonial-card:hover .testimonial-avatar{border-color:var(--orange)}
+body.dark .chip{color:var(--ink);border-color:var(--line);background:transparent}
+body.dark .chip:hover:not(.active){background:rgba(95,155,105,0.18);border-color:#5f9b69;color:#ffffff}
+body.dark .chip.active{background:#5f9b69;color:#ffffff;border-color:#5f9b69}
+body.dark .menu-account-btn{background:#5f9b69;color:#ffffff !important;box-shadow:0 4px 14px rgba(95,155,105,0.25)}
+body.dark .menu-account-btn:hover{background:var(--orange);color:#ffffff !important;box-shadow:0 8px 20px rgba(230,126,34,0.35)}
+
+
+

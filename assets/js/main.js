@@ -125,10 +125,42 @@ function initMobileMenu() {
   });
 }
 
+function initBackToTop() {
+  let btn = document.querySelector(".back-to-top");
+  if (!btn) {
+    btn = document.createElement("button");
+    btn.className = "back-to-top";
+    btn.setAttribute("aria-label", "Back to top");
+    btn.setAttribute("title", "Back to top");
+    btn.innerHTML = '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>';
+    document.body.appendChild(btn);
+  }
+
+  const toggleVisible = () => {
+    if (window.scrollY > 300) {
+      btn.classList.add("visible");
+    } else {
+      btn.classList.remove("visible");
+    }
+  };
+
+  window.addEventListener("scroll", toggleVisible, { passive: true });
+  toggleVisible();
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   updateCart();
   renderCart();
   initTheme();
   initMobileMenu();
   highlightActiveMenu();
+  initBackToTop();
 });
+

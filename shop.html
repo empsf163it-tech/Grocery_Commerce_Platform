@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Shop — TAJAJINS</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/dark-mode.css">
 </head>
@@ -113,20 +114,28 @@
           <h2>Seasonal specials & flash offers</h2>
           <p class="sub-head">Handcrafted weekly bundles with up to 20% savings.</p>
         </div>
-        <div class="features-grid" style="grid-template-columns:1fr 1fr;">
-          <div class="recipe" style="background:var(--green)">
-            <div class="eyebrow" style="color:#dce8da">WEEKLY BUNDLE</div>
-            <h2 style="font-size:42px">Organic Fruit Box</h2>
-            <p>Get 6 varieties of seasonal organic fruits at 20% off this week only.</p>
-            <button class="btn primary" onclick="addItem('Organic Fruit Box', 349)">Add Bundle · ₹349</button>
+        <div class="offer-grid">
+          <div class="offer-card green-card">
+            <div class="offer-copy">
+              <div class="eyebrow">WEEKLY BUNDLE</div>
+              <h2>Organic Fruit Box</h2>
+              <p>Get 6 varieties of seasonal organic fruits at 20% off this week only.</p>
+              <button class="btn primary" onclick="addItem('Organic Fruit Box', 349)">Add Bundle · ₹349</button>
+            </div>
+            <div class="offer-media">
+              <img src="assets/images/category_produce.jpg" alt="Organic Fruit Box">
+            </div>
           </div>
-          <div class="recipe" style="background:var(--orange)">
-            <div class="eyebrow" style="color:#ffe7d9">BREAKFAST SPECIAL</div>
-            <h2 style="font-size:42px">Artisanal Bakery Set</h2>
-            <p>Fresh sourdough bread, farm butter, and wildflower honey.</p>
-            <button class="btn" style="border-color:rgb(24, 44, 18);color:rgb(59, 129, 71)"
-              onclick="addItem('Artisanal Bakery Set', 289)">Add Set ·
-              ₹289</button>
+          <div class="offer-card orange-card">
+            <div class="offer-copy">
+              <div class="eyebrow">BREAKFAST SPECIAL</div>
+              <h2>Artisanal Bakery Set</h2>
+              <p>Fresh sourdough bread, farm butter, and wildflower honey.</p>
+              <button class="btn accent-btn" onclick="addItem('Artisanal Bakery Set', 289)">Add Set · ₹289</button>
+            </div>
+            <div class="offer-media">
+              <img src="assets/images/category_dairy.jpg" alt="Artisanal Bakery Set">
+            </div>
           </div>
         </div>
       </div>
